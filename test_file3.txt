@@ -1,0 +1,11 @@
+3
+10:00 20:00
+10
+12:00 1 richguy1
+12:01 1 richguy2
+12:02 2 richguy1 1
+12:03 2 richguy2 2
+12:04 2 richguy1 3
+12:05 2 richguy2 1
+12:06 4 richguy1
+12:07 4 richguy2
