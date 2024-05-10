@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
 
 	// Open file and make sure it opened
 	std::ifstream inputFile(argv[1]);
-	//std::ifstream inputFile("test_file4.txt");
+	//std::ifstream inputFile("test_file1.txt");
 	if (!inputFile.good())
 		return 1;
 
@@ -160,7 +160,7 @@ int main(int argc, char* argv[])
 				for (Table& table : tables)
 					if (!table.isBusy())
 						throw(std::string("ICanWaitNoLonger!"));
-				if (userQueue.size() > nTables)
+				if (userQueue.size() > nTables && std::find(userQueue.begin(), userQueue.end(), eventName) != userQueue.end())
 				{
 					userQueue.erase(std::find(userQueue.begin(), userQueue.end(), eventName));
 					std::cout << eventTimeString << " 11 " << eventName << std::endl;
